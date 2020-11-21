@@ -61,7 +61,7 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>140</width>
+            <width>170</width>
             <height>34</height>
            </size>
           </property>
@@ -90,7 +90,7 @@
            <string extracomment="Challenge 1 result suffix"> m³</string>
           </property>
           <property name="maximum">
-           <double>100000000.000000000000000</double>
+           <double>999999999.000000000000000</double>
           </property>
          </widget>
         </item>
@@ -109,7 +109,7 @@
            <number>2</number>
           </property>
           <property name="maximum">
-           <double>9999999.990000000223517</double>
+           <double>620.000000000000000</double>
           </property>
           <property name="singleStep">
            <double>0.010000000000000</double>
@@ -144,7 +144,7 @@
            </sizepolicy>
           </property>
           <property name="frameShape">
-           <enum>QFrame::Box</enum>
+           <enum>QFrame::StyledPanel</enum>
           </property>
          </widget>
         </item>
@@ -223,7 +223,7 @@
           </property>
           <property name="minimumSize">
            <size>
-            <width>140</width>
+            <width>170</width>
             <height>34</height>
            </size>
           </property>
