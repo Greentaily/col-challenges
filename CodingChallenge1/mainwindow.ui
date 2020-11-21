@@ -81,7 +81,7 @@
            <enum>QAbstractSpinBox::NoButtons</enum>
           </property>
           <property name="specialValueText">
-           <string>...</string>
+           <string notr="true">...</string>
           </property>
           <property name="prefix">
            <string notr="true"/>

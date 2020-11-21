@@ -10,13 +10,21 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    sphere.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    sphere.h
 
 FORMS += \
     mainwindow.ui
+
+TRANSLATIONS += \
+    lang/challenge_en_US.ts \
+    lang/challenge_en_GB.ts \
+    lang/challenge_ru_RU.ts \
+    lang/challenge_de_DE.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
