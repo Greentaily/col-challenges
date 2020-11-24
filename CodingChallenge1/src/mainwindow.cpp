@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include <QDebug>
-
 MainWindow::MainWindow(QWidget *parent)
 	: QMainWindow(parent)
 	, ui(new Ui::MainWindow)
@@ -35,7 +33,6 @@ void MainWindow::on_challenge2_button_count_clicked()
 												.toLower()
 												.simplified()
 												.replace(" ", "");
-	//qDebug() << text.split(QString(), Qt::SkipEmptyParts) [](int value) {return;};
 	QMap<QChar, int> map;
 	int max = 0;
 	QStringList result;
