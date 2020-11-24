@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QDebug>
+
 MainWindow::MainWindow(QWidget *parent)
 	: QMainWindow(parent)
 	, ui(new Ui::MainWindow)
@@ -29,7 +31,21 @@ void MainWindow::on_challenge1_button_calculate_clicked()
 
 void MainWindow::on_challenge2_button_count_clicked()
 {
-
+	QString text = this->ui->challenge2_input->toPlainText()
+				   .toLower()
+				   .simplified()
+				   .replace(" ", "");
+	//qDebug() << text.split(QString(), Qt::SkipEmptyParts) [](int value) {return;};
+	QMap<QChar, int> map;
+	int max = 0;
+	QStringList result;
+	foreach (QChar c, text)
+	{
+		map.insert(c, map.value(c)+1);
+		max = qMax(max, map.value(c));
+	}
+	foreach (QChar c, map.keys()) if (map.value(c) == max) result.append(c);
+	this->ui->challenge2_result->setText(result.join(" "));
 }
 
 void MainWindow::on_challenge3_button_generate_clicked()
