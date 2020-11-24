@@ -29,7 +29,5 @@ private slots:
 
 private:
 	Ui::MainWindow* ui;
-
-	QGraphicsScene* _sphere_scene;
 };
 #endif // MAINWINDOW_H

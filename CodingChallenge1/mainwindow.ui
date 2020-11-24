@@ -89,6 +89,9 @@
           <property name="suffix">
            <string extracomment="Challenge 1 result suffix"> m³</string>
           </property>
+          <property name="decimals">
+           <number>6</number>
+          </property>
           <property name="maximum">
            <double>999999999.000000000000000</double>
           </property>
@@ -108,11 +111,17 @@
           <property name="decimals">
            <number>2</number>
           </property>
+          <property name="minimum">
+           <double>0.010000000000000</double>
+          </property>
           <property name="maximum">
            <double>620.000000000000000</double>
           </property>
           <property name="singleStep">
            <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>1.000000000000000</double>
           </property>
          </widget>
         </item>
@@ -136,28 +145,27 @@
          </widget>
         </item>
         <item row="4" column="0" colspan="3">
-         <widget class="QGraphicsView" name="challenge1_graphics_view">
+         <widget class="QLabel" name="challenge1_graphics_view">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
+          <property name="autoFillBackground">
+           <bool>true</bool>
           </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <widget class="QPushButton" name="challenge1_button_calculate">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
           </property>
           <property name="text">
-           <string extracomment="Challenge 1 calculate button">Calculate</string>
+           <string>Press Calculate to render the sphere.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -176,6 +184,19 @@
            </size>
           </property>
          </spacer>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="challenge1_button_calculate">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string extracomment="Challenge 1 calculate button">Calculate</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -350,6 +371,12 @@
         </item>
         <item row="5" column="0" colspan="3">
          <widget class="QPlainTextEdit" name="challenge3_result">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
           <property name="plainText">
            <string extracomment="Challenge 3 result text"/>
           </property>
