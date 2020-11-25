@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/locales">
+        <file>lang/challenge_ru_RU.qm</file>
+        <file>lang/challenge_en_US.qm</file>
+        <file>lang/challenge_en_GB.qm</file>
+        <file>lang/challenge_de_DE.qm</file>
+    </qresource>
+</RCC>
