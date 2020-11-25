@@ -26,6 +26,9 @@ TRANSLATIONS += \
     lang/challenge_ru_RU.ts \
     lang/challenge_de_DE.ts
 
+RESOURCES += \
+    locales.qrc
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

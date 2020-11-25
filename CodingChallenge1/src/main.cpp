@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	QApplication a(argc, argv);
 
 	QTranslator translator;
-	translator.load(QLocale(), QLatin1String("challenge"), QLatin1String("_"), QLatin1String("lang"));
+	translator.load(QLocale(), QLatin1String("challenge"), QLatin1String("_"), QLatin1String(":/locales/lang"));
 	a.installTranslator(&translator);
 
 	MainWindow w;
