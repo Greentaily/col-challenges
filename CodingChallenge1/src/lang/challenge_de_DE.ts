@@ -66,7 +66,7 @@
         <location filename="../mainwindow.ui" line="277"/>
         <source>This will display the most frequent character in a text. Enter the text and press Count.</source>
         <extracomment>Challenge 2 description</extracomment>
-        <translation>Hier wird die häufigsten Zeichen eines Textes angezeigt. Geben Sie den Text ein und drücken Sie Zählen.</translation>
+        <translation type="unfinished">Hier wird das häufigste Zeichen eines Textes angezeigt. Geben Sie den Text ein und drücken Sie Zählen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="293"/>
