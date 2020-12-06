@@ -29,8 +29,8 @@ def main(argv):
 				return 3
 			else:
 				money_required = calculate(ducks,
-	                           bread_nutritiousness,
-	                           bread_price)
+				                           bread_nutritiousness,
+				                           bread_price)
 				print("--------------")
 				print("Money to spend: ", money_required)
 	return 0
